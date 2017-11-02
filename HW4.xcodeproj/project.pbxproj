@@ -12,10 +12,10 @@
 		FB5834F21F9EDF0300457AB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB5834F01F9EDF0300457AB9 /* Main.storyboard */; };
 		FB5834F41F9EDF0300457AB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB5834F31F9EDF0300457AB9 /* Assets.xcassets */; };
 		FB5834F71F9EDF0300457AB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB5834F51F9EDF0300457AB9 /* LaunchScreen.storyboard */; };
-		FBA291791FAAB01C00FD225E /* homeTVCTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA291781FAAB01C00FD225E /* homeTVCTableViewController.swift */; };
 		FBD6EDBD1FA034150027B5C7 /* BeneficiaryRegistrationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD6EDBC1FA034150027B5C7 /* BeneficiaryRegistrationVC.swift */; };
 		FBD6EDBF1FA04FB40027B5C7 /* RegistrationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD6EDBE1FA04FB40027B5C7 /* RegistrationVC.swift */; };
 		FBD6EDC11FA800400027B5C7 /* logindata.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD6EDC01FA8003E0027B5C7 /* logindata.swift */; };
+		FBF91C881FABAC8500905E64 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF91C871FABAC8500905E64 /* HomeVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,10 +26,10 @@
 		FB5834F31F9EDF0300457AB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB5834F61F9EDF0300457AB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB5834F81F9EDF0300457AB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FBA291781FAAB01C00FD225E /* homeTVCTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeTVCTableViewController.swift; sourceTree = "<group>"; };
 		FBD6EDBC1FA034150027B5C7 /* BeneficiaryRegistrationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeneficiaryRegistrationVC.swift; sourceTree = "<group>"; };
 		FBD6EDBE1FA04FB40027B5C7 /* RegistrationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationVC.swift; sourceTree = "<group>"; };
 		FBD6EDC01FA8003E0027B5C7 /* logindata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = logindata.swift; sourceTree = "<group>"; };
+		FBF91C871FABAC8500905E64 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,9 +64,9 @@
 			children = (
 				FB5834EC1F9EDF0200457AB9 /* AppDelegate.swift */,
 				FB5834EE1F9EDF0200457AB9 /* LoginVC.swift */,
+				FBF91C871FABAC8500905E64 /* HomeVC.swift */,
 				FBD6EDBC1FA034150027B5C7 /* BeneficiaryRegistrationVC.swift */,
 				FB5834F01F9EDF0300457AB9 /* Main.storyboard */,
-				FBA291781FAAB01C00FD225E /* homeTVCTableViewController.swift */,
 				FBD6EDC01FA8003E0027B5C7 /* logindata.swift */,
 				FBD6EDBE1FA04FB40027B5C7 /* RegistrationVC.swift */,
 				FB5834F31F9EDF0300457AB9 /* Assets.xcassets */,
@@ -150,8 +150,8 @@
 			files = (
 				FB5834EF1F9EDF0200457AB9 /* LoginVC.swift in Sources */,
 				FB5834ED1F9EDF0200457AB9 /* AppDelegate.swift in Sources */,
-				FBA291791FAAB01C00FD225E /* homeTVCTableViewController.swift in Sources */,
 				FBD6EDC11FA800400027B5C7 /* logindata.swift in Sources */,
+				FBF91C881FABAC8500905E64 /* HomeVC.swift in Sources */,
 				FBD6EDBD1FA034150027B5C7 /* BeneficiaryRegistrationVC.swift in Sources */,
 				FBD6EDBF1FA04FB40027B5C7 /* RegistrationVC.swift in Sources */,
 			);

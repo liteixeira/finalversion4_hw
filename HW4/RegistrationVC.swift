@@ -16,8 +16,9 @@ var track:String = ""
 var user_Login = [LoginData]()
 // var mutable_Login:NSMutableArray = [LoginData(email: userEmail, password: userPassword, usertype: track)]
 //var mutable_Login = NSMutableArray()
-var opa = [String]()
-
+var store_Email = [String]()
+var store_Password = [String]()
+var store_Track = [String]()
 
 class RegistrationVC: UIViewController {
     
@@ -111,38 +112,28 @@ class RegistrationVC: UIViewController {
         } else {
           msgConfirmation(title: "Confirmation", text: "You successfully registered")
             user_Login.append(LoginData(email: userEmail, password: userPassword, usertype: track ))
-          //  mutable_Login.add(user_Login)
-            
-            
-            //  var mutable_Login:NSMutableArray = [LoginData(email: userEmail, password: userPassword, usertype: track)]
-            
-    
-         //   var mutable_Login:NSMutableArray =
-          //  UserDefaults.standard.set(user_Login, forKey: "userLogIn")
-       //     var mutable_Login:NSMutableArray =
+          
             
            for item in user_Login {
-            
-           // UserDefaults.standard.set(item.email, forKey: "userEmail")
-           // UserDefaults.standard.set(item.password, forKey: "userPassword")
-           // UserDefaults.standard.set(item.usertype, forKey: "accountype")
-          //  UserDefaults.standard.synchronize()
-            if opa.contains(item.email) == false {
-                opa.append(item.email)
+            if (store_Email.contains(item.email) == false) && (store_Password.contains(item.password) == false) && (store_Track.contains(item.usertype) == false){
+                store_Email.append(item.email)
+                store_Password.append(item.password)
+                store_Track.append(item.usertype)
+            }
+           // print("\(item.email)")
+          //  print("\(item.password)")
+         //   print("\(item.usertype)")
             }
             
-            print("\(item.email)")
-            print("\(item.password)")
-            print("\(item.usertype)")
-
-            }
+            
+            
         } // end of else
         
        //////////////////////////////////////////////////////////////////////////////////////////////////////////
         
-        UserDefaults.standard.set(opa, forKey: "userEmail")
-        UserDefaults.standard.set(userPassword, forKey: "userPassword")
-        UserDefaults.standard.set(track, forKey: "accountype")
+        UserDefaults.standard.set(store_Email, forKey: "userEmail")
+        UserDefaults.standard.set(store_Password, forKey: "userPassword")
+        UserDefaults.standard.set(store_Track, forKey: "accountype")
         UserDefaults.standard.synchronize()
         
         // UserDefaults.standard.object(forKey: "userLogin")

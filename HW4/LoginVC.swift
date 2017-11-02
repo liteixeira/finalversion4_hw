@@ -8,6 +8,9 @@
 
 import UIKit
 
+var temp:Bool = false
+var count:Int = 0
+
 class LoginVC : UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var textuserName: UITextField!
@@ -18,33 +21,47 @@ class LoginVC : UIViewController, UITextFieldDelegate {
         let useremailLogIn = textuserName.text!
         let userpasswordLogIn = textPassword.text!
         let email_Data_Stored = UserDefaults.standard.stringArray(forKey: "userEmail")
-       // let email_Data_Stored = UserDefaults.standard.string(forKey: "userEmail")
-     //   let password_Data_Stored = UserDefaults.standard.string(forKey: "userPassword")
+        let password_Data_Store = UserDefaults.standard.stringArray(forKey: "userPassword")
+        
+      
+       
         for (index,item) in email_Data_Stored!.enumerated() {
             if (useremailLogIn == email_Data_Stored![index]) {
                 // User can Log in
-                print("Log in can be done")
-             //   UserDefaults.standard.bool(forKey: "userabletoLogIn")
-              //  UserDefaults.standard.synchronize()
-                  self.performSegue(withIdentifier: "logintohome", sender:self)
-            }
-        }
-        //if (useremailLogIn == email_Data_Stored) && (userpasswordLogIn == password_Data_Stored) {
-            // User can Log in
-          //  print("Log in can be done")
-         //   UserDefaults.standard.bool(forKey: "userabletoLogIn")
-       //     UserDefaults.standard.synchronize()
-     //   }
+                print("User email correct")
+          
+                temp = true
+                count = index
+            } // end if
+        } // end email_Data_Stored for loop
+        print("\(password_Data_Store![count])")
+        print("\(userpasswordLogIn)")
         
-    }
+        if (temp == true) && (userpasswordLogIn == password_Data_Store![count]){
+           print("Log in can be done")
+           self.performSegue(withIdentifier: "logintohome", sender: self)
+          temp = false
+          textuserName.delegate = self
+          textPassword.delegate = self
+        } // end if
+        
+        
+        
+    } // end login pressed func
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+
         
     }
-
+    
+    func textFieldDidEndEditing(_ textField: UITextField, reason: UITextFieldDidEndEditingReason) {
+        textuserName!.text = ""
+        textPassword!.text = ""
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -55,12 +72,6 @@ class LoginVC : UIViewController, UITextFieldDelegate {
     }
     
     
-    //override func viewDidAppear(_ animated: Bool) {
-       // let userLogInConfirmation = UserDefaults.standard.bool(forKey: "userabletoLogIn")
-       // if(!userLogInConfirmation) {
-      //      self.performSegue(withIdentifier: "logintohome", sender:self)
-    //    }
-  //  }
 
 }
 
