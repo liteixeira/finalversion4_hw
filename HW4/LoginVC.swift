@@ -20,7 +20,15 @@ class LoginVC : UIViewController, UITextFieldDelegate {
         let email_Data_Stored = UserDefaults.standard.stringArray(forKey: "userEmail")
        // let email_Data_Stored = UserDefaults.standard.string(forKey: "userEmail")
      //   let password_Data_Stored = UserDefaults.standard.string(forKey: "userPassword")
-        
+        for (index,item) in email_Data_Stored!.enumerated() {
+            if (useremailLogIn == email_Data_Stored![index]) {
+                // User can Log in
+                print("Log in can be done")
+             //   UserDefaults.standard.bool(forKey: "userabletoLogIn")
+              //  UserDefaults.standard.synchronize()
+                  self.performSegue(withIdentifier: "logintohome", sender:self)
+            }
+        }
         //if (useremailLogIn == email_Data_Stored) && (userpasswordLogIn == password_Data_Stored) {
             // User can Log in
           //  print("Log in can be done")
@@ -34,6 +42,7 @@ class LoginVC : UIViewController, UITextFieldDelegate {
         
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -45,6 +54,13 @@ class LoginVC : UIViewController, UITextFieldDelegate {
         self.view.endEditing(true)
     }
     
+    
+    //override func viewDidAppear(_ animated: Bool) {
+       // let userLogInConfirmation = UserDefaults.standard.bool(forKey: "userabletoLogIn")
+       // if(!userLogInConfirmation) {
+      //      self.performSegue(withIdentifier: "logintohome", sender:self)
+    //    }
+  //  }
 
 }
 
