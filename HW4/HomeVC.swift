@@ -8,8 +8,10 @@
 
 import UIKit
 
+
+
 class HomeVC: UIViewController {
-    
+    var current_User_Type:String = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
