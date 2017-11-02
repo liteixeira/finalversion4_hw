@@ -14,7 +14,24 @@ class LoginVC : UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var textPassword: UITextField!
     
+    @IBAction func loginPressed(_ sender: UIButton) {
+        let useremailLogIn = textuserName.text!
+        let userpasswordLogIn = textPassword.text!
+        let email_Data_Stored = UserDefaults.standard.stringArray(forKey: "userEmail")
+       // let email_Data_Stored = UserDefaults.standard.string(forKey: "userEmail")
+     //   let password_Data_Stored = UserDefaults.standard.string(forKey: "userPassword")
+        
+        //if (useremailLogIn == email_Data_Stored) && (userpasswordLogIn == password_Data_Stored) {
+            // User can Log in
+          //  print("Log in can be done")
+         //   UserDefaults.standard.bool(forKey: "userabletoLogIn")
+       //     UserDefaults.standard.synchronize()
+     //   }
+        
+    }
+    
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }

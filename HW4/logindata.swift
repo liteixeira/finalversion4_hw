@@ -14,10 +14,13 @@ class LoginData {
     
     let email: String
     let password: String
+    let usertype: String
     
-    init(email: String, password:String) {
+    init(email: String, password:String, usertype: String) {
         self.email = email
         self.password = password
+        self.usertype = usertype
+
     }
     
 }
