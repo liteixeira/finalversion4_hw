@@ -159,6 +159,10 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="button1" destination="gLQ-IY-5ZW" id="cHI-HT-rtR"/>
+                        <outlet property="button2" destination="4cN-OO-x7t" id="sBq-0a-D5d"/>
+                        <outlet property="button3" destination="16b-A3-Vax" id="D9d-ZM-Vmc"/>
+                        <outlet property="button4" destination="hn5-Bo-Yoc" id="TRR-gq-SHT"/>
                         <outlet property="welcometext" destination="dHg-0m-bP0" id="q2s-qb-epu"/>
                     </connections>
                 </viewController>
