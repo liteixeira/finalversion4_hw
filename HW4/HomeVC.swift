@@ -10,13 +10,23 @@ import UIKit
 
 
 
-class HomeVC: UIViewController {
-    var current_User_Type:String = ""
 
+class HomeVC: UIViewController {
+  
+    var current_User_Account:String = ""
+    var current_User_Name:String = ""
+    var current_User_Email:String = ""
+    
+    @IBOutlet weak var welcometext: UILabel!
+    
+    @IBAction func logoutpressed(_ sender: UIBarButtonItem) {
+        self.dismiss(animated: false, completion: nil)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        welcometext.text = "Welcome \(current_User_Name) "
     }
 
     override func didReceiveMemoryWarning() {

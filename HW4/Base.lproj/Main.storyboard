@@ -95,7 +95,7 @@
         <!--Home -->
         <scene sceneID="per-MY-R7X">
             <objects>
-                <viewController id="bNO-Ac-SBq" customClass="HomeVC" customModule="HW4" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Home" useStoryboardIdentifierAsRestorationIdentifier="YES" id="bNO-Ac-SBq" customClass="HomeVC" customModule="HW4" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="80f-OO-ywt">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -140,15 +140,31 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dHg-0m-bP0">
+                                <rect key="frame" x="34" y="97" width="303" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="qWu-GE-gh6"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Home " id="u8k-Ls-u3Z"/>
+                    <navigationItem key="navigationItem" title="Home " id="u8k-Ls-u3Z">
+                        <barButtonItem key="rightBarButtonItem" title="Log Out" id="b0E-sG-XQt">
+                            <connections>
+                                <action selector="logoutpressed:" destination="bNO-Ac-SBq" id="lon-Wf-AJJ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="welcometext" destination="dHg-0m-bP0" id="q2s-qb-epu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NiO-SQ-Rpf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1696.8" y="831.63418290854577"/>
+            <point key="canvasLocation" x="1706.4000000000001" y="988.15592203898063"/>
         </scene>
         <!--Registration-->
         <scene sceneID="qOH-ru-zVv">
@@ -438,7 +454,7 @@
         <!--Navigation Controller-->
         <scene sceneID="cpW-ux-EEZ">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gDc-fn-kab" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="nav" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="gDc-fn-kab" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="s7u-fT-70H">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -451,7 +467,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3K2-Op-txF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="743" y="832"/>
+            <point key="canvasLocation" x="913" y="989"/>
         </scene>
     </scenes>
 </document>

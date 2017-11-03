@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		FB5834ED1F9EDF0200457AB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5834EC1F9EDF0200457AB9 /* AppDelegate.swift */; };
 		FB5834EF1F9EDF0200457AB9 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5834EE1F9EDF0200457AB9 /* LoginVC.swift */; };
-		FB5834F21F9EDF0300457AB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB5834F01F9EDF0300457AB9 /* Main.storyboard */; };
+		FB5834F21F9EDF0300457AB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB5834F01F9EDF0300457AB9 /* Main.storyboard */; settings = {ASSET_TAGS = (opa, ); }; };
 		FB5834F41F9EDF0300457AB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB5834F31F9EDF0300457AB9 /* Assets.xcassets */; };
 		FB5834F71F9EDF0300457AB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB5834F51F9EDF0300457AB9 /* LaunchScreen.storyboard */; };
 		FBD6EDBD1FA034150027B5C7 /* BeneficiaryRegistrationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD6EDBC1FA034150027B5C7 /* BeneficiaryRegistrationVC.swift */; };
@@ -102,6 +102,9 @@
 		FB5834E11F9EDF0100457AB9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					opa,
+				);
 				LastSwiftUpdateCheck = 0900;
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = livia;

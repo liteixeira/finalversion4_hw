@@ -111,8 +111,8 @@ class RegistrationVC: UIViewController {
             msgAlert(title: "Warning", text: "You still need to register as either Beneficiary, Helper or Organization.")
         } else {
           msgConfirmation(title: "Confirmation", text: "You successfully registered")
+            
             user_Login.append(LoginData(email: userEmail, password: userPassword, usertype: track ))
-          
             
            for item in user_Login {
             if (store_Email.contains(item.email) == false) && (store_Password.contains(item.password) == false) && (store_Track.contains(item.usertype) == false){
@@ -130,7 +130,6 @@ class RegistrationVC: UIViewController {
         } // end of else
         
        //////////////////////////////////////////////////////////////////////////////////////////////////////////
-        
         UserDefaults.standard.set(store_Email, forKey: "userEmail")
         UserDefaults.standard.set(store_Password, forKey: "userPassword")
         UserDefaults.standard.set(store_Track, forKey: "accountype")
