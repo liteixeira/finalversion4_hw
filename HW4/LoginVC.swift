@@ -10,9 +10,9 @@ import UIKit
 
 var temp:Bool = false
 var count:Int = 0
-var account_type_Data_Stored = [String]()
-var email_Data_Stored = [String]()
-var password_Data_Stored = [String]()
+var receive_account_type_Data_Stored:String = ""
+var receive_email_Data_Stored:String = ""
+var receive_password_Data_Stored:String = ""
 
 class LoginVC : UIViewController, UITextFieldDelegate {
 
@@ -22,12 +22,12 @@ class LoginVC : UIViewController, UITextFieldDelegate {
     
     
     @IBAction func loginPressed(_ sender: UIButton) {
-        let useremailLogIn = textuserName.text!
-        let userpasswordLogIn = textPassword.text!
+       let useremailLogIn = textuserName.text!
+       let userpasswordLogIn = textPassword.text!
         
-        email_Data_Stored = UserDefaults.standard.stringArray(forKey: "userEmail")!
-        password_Data_Stored = UserDefaults.standard.stringArray(forKey: "userPassword")!
-        account_type_Data_Stored = UserDefaults.standard.stringArray(forKey: "accountype")!
+       let email_Data_Stored = UserDefaults.standard.stringArray(forKey: "userEmail")!
+       let password_Data_Stored = UserDefaults.standard.stringArray(forKey: "userPassword")!
+       let account_type_Data_Stored = UserDefaults.standard.stringArray(forKey: "accountype")!
       
        
         for (index,item) in email_Data_Stored.enumerated() {
@@ -40,12 +40,18 @@ class LoginVC : UIViewController, UITextFieldDelegate {
             } // end if
         } // end email_Data_Stored for loop
         
-       // print("\(password_Data_Stored![count])")
-      //  print("\(userpasswordLogIn)")
-      //  print("\(account_type_Data_Stored[count])")
+     //   print("\(password_Data_Stored)")
+        
+     //   print("\(account_type_Data_Stored)")
         
         if (temp == true) && (userpasswordLogIn == password_Data_Stored[count]){
           print("Log in can be done")
+          receive_account_type_Data_Stored = account_type_Data_Stored[count]
+          receive_email_Data_Stored = email_Data_Stored[count]
+            
+          print("\(receive_account_type_Data_Stored)")
+          print("\(receive_email_Data_Stored)")
+            
           self.performSegue(withIdentifier: "logintohome", sender: self)
           temp = false
           self.textuserName.text = ""
@@ -84,13 +90,9 @@ class LoginVC : UIViewController, UITextFieldDelegate {
             let navVC = segue.destination as! UINavigationController
             let destVC = navVC.topViewController as! HomeVC
 
-            destVC.current_User_Account = account_type_Data_Stored[count]
-            destVC.current_User_Email = email_Data_Stored[count]
-            
+            destVC.current_User_Account = receive_account_type_Data_Stored
+            destVC.current_User_Email = receive_email_Data_Stored
         
-          //  print("\(destVC.current_User_Account)")
-         //   print("\(destVC.current_User_Name)")
-            
 
         }
         
