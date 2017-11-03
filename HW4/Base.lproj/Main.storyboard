@@ -122,7 +122,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="dFI-FA-M34" kind="show" id="VsP-nB-dfe"/>
+                                    <segue destination="dFI-FA-M34" kind="show" identifier="hometomyprofile" id="VsP-nB-dfe"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="16b-A3-Vax">
@@ -176,7 +176,7 @@
         <!--My Profile-->
         <scene sceneID="iMf-sX-xSC">
             <objects>
-                <viewController id="dFI-FA-M34" sceneMemberID="viewController">
+                <viewController id="dFI-FA-M34" customClass="MyProfileVC" customModule="HW4" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RXq-0k-ceA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -186,10 +186,14 @@
                     <navigationItem key="navigationItem" title="My Profile" id="LuO-2e-BFL">
                         <barButtonItem key="rightBarButtonItem" title="Edit" id="fQE-6y-ohA">
                             <connections>
-                                <segue destination="8Ul-cD-P8g" kind="show" identifier="myprofiletoeditprofile" id="4QE-vr-8m2"/>
+                                <action selector="editbuttonPressed:" destination="dFI-FA-M34" id="ETX-DC-4g3"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <segue destination="8Ul-cD-P8g" kind="show" identifier="myprofiletobeneficiary" id="3yC-GM-dg4"/>
+                        <segue destination="1IT-gT-epq" kind="show" identifier="myprofiletohelper" id="BCk-bq-G1c"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dwd-iH-MJW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -318,6 +322,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ORg-m2-wqc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2263.1999999999998" y="134.48275862068968"/>
+        </scene>
+        <!--Helper-->
+        <scene sceneID="YbU-c8-0kP">
+            <objects>
+                <viewController id="1IT-gT-epq" customClass="HelperRegistrationVC" customModule="HW4" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6Iq-6v-USW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="sJZ-rW-8Op"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Helper" id="68N-6d-dEz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RDe-zo-gjR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4409" y="1872"/>
         </scene>
         <!--Beneficiary-->
         <scene sceneID="IrL-Y2-Uzc">

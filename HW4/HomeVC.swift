@@ -8,8 +8,8 @@
 
 import UIKit
 
-
-
+var temp_current_User:String = ""
+var temp_current_Email:String = ""
 
 class HomeVC: UIViewController {
   
@@ -57,6 +57,9 @@ class HomeVC: UIViewController {
             print("Error! Check the code!!")
         }
         
+        temp_current_User  = current_User_Account
+        temp_current_Email = current_User_Email
+        
         
     }
 
@@ -66,14 +69,32 @@ class HomeVC: UIViewController {
     }
     
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        
+        //needs to send data to my profile -> know type of account and in my profile select the correct sague to show
+        // != View controllers
+        if segue.identifier == "hometomyprofile" {
+         let destVC = segue.destination as! MyProfileVC
+        // let firstdestVC = navVC.viewControllers[0] as! HomeVC
+        // let destVC = navVC.viewControllers[1] as! MyProfileVC
+            
+            destVC.current_User_Account = temp_current_User
+            destVC.current_User_Email = temp_current_Email
+            print("Opa!")
+            print("\(destVC.current_User_Account)")
+            print("\(destVC.current_User_Email)")
+            
+        }
+       
+        
+        
     }
-    */
+ 
 
 }

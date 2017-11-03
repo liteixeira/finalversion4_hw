@@ -16,6 +16,8 @@
 		FBD6EDBF1FA04FB40027B5C7 /* RegistrationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD6EDBE1FA04FB40027B5C7 /* RegistrationVC.swift */; };
 		FBD6EDC11FA800400027B5C7 /* logindata.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD6EDC01FA8003E0027B5C7 /* logindata.swift */; };
 		FBF91C881FABAC8500905E64 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF91C871FABAC8500905E64 /* HomeVC.swift */; };
+		FBF91C8A1FAC4ED100905E64 /* MyProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF91C891FAC4ED100905E64 /* MyProfileVC.swift */; };
+		FBF91C8C1FAC4F1B00905E64 /* HelperRegistrationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF91C8B1FAC4F1B00905E64 /* HelperRegistrationVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		FBD6EDBE1FA04FB40027B5C7 /* RegistrationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationVC.swift; sourceTree = "<group>"; };
 		FBD6EDC01FA8003E0027B5C7 /* logindata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = logindata.swift; sourceTree = "<group>"; };
 		FBF91C871FABAC8500905E64 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		FBF91C891FAC4ED100905E64 /* MyProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileVC.swift; sourceTree = "<group>"; };
+		FBF91C8B1FAC4F1B00905E64 /* HelperRegistrationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperRegistrationVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +71,8 @@
 				FBF91C871FABAC8500905E64 /* HomeVC.swift */,
 				FBD6EDBC1FA034150027B5C7 /* BeneficiaryRegistrationVC.swift */,
 				FB5834F01F9EDF0300457AB9 /* Main.storyboard */,
+				FBF91C8B1FAC4F1B00905E64 /* HelperRegistrationVC.swift */,
+				FBF91C891FAC4ED100905E64 /* MyProfileVC.swift */,
 				FBD6EDC01FA8003E0027B5C7 /* logindata.swift */,
 				FBD6EDBE1FA04FB40027B5C7 /* RegistrationVC.swift */,
 				FB5834F31F9EDF0300457AB9 /* Assets.xcassets */,
@@ -152,8 +158,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB5834EF1F9EDF0200457AB9 /* LoginVC.swift in Sources */,
+				FBF91C8C1FAC4F1B00905E64 /* HelperRegistrationVC.swift in Sources */,
 				FB5834ED1F9EDF0200457AB9 /* AppDelegate.swift in Sources */,
 				FBD6EDC11FA800400027B5C7 /* logindata.swift in Sources */,
+				FBF91C8A1FAC4ED100905E64 /* MyProfileVC.swift in Sources */,
 				FBF91C881FABAC8500905E64 /* HomeVC.swift in Sources */,
 				FBD6EDBD1FA034150027B5C7 /* BeneficiaryRegistrationVC.swift in Sources */,
 				FBD6EDBF1FA04FB40027B5C7 /* RegistrationVC.swift in Sources */,
