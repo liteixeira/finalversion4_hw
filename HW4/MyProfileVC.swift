@@ -112,6 +112,8 @@ class MyProfileVC: UIViewController, Send_Data_Myprofile {
    
         data_Benefiiary_Send = data
         print("\(data_Benefiiary_Send)")
+        
+        
     }
     
     
@@ -124,7 +126,6 @@ class MyProfileVC: UIViewController, Send_Data_Myprofile {
         // Pass the selected object to the new view controller.
         
         if segue.identifier == "myprofiletobeneficiary" {
-            
             let destVC: BeneficiaryRegistrationVC = segue.destination as! BeneficiaryRegistrationVC
             destVC.delegate = self
         }

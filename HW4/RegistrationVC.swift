@@ -115,7 +115,7 @@ class RegistrationVC: UIViewController {
            for item in user_Login {
             
        
-           if (store_Email.contains(item.email) == false) && (store_Password.contains(item.password) == false) && (store_Track.contains(item.usertype) == false){
+           if (store_Email.contains(item.email) == false) && (store_Password.contains(item.password) == false) {
             
                 store_Email.append(item.email)
                 store_Password.append(item.password)
