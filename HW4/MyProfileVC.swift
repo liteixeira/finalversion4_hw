@@ -8,7 +8,7 @@
 
 import UIKit
 
-
+var data_Benefiiary_Send = ["","","","","","","",""]
 
 class MyProfileVC: UIViewController, Send_Data_Myprofile {
     
@@ -32,11 +32,9 @@ class MyProfileVC: UIViewController, Send_Data_Myprofile {
     
     
     var current_User_Account:String = ""
-    var current_User_Name:String = ""
     var current_User_Email:String = ""
     
    
-  
     
     @IBAction func editbuttonPressed(_ sender: UIBarButtonItem) {
         
@@ -55,11 +53,46 @@ class MyProfileVC: UIViewController, Send_Data_Myprofile {
   
     
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+    
         
+        switch current_User_Account {
+        case "Beneficiary":
+            label.text = "Full name:"
+            label2.text = "Type of Disability:"
+            label4.text = "Address (Streeet):"
+            label6.text = "ZIP/Postal Code:"
+            label8.text = "City"
+            label10.text = "Country"
+            label12.text = "Contact Information:"
+            label13.text = "Personal:"
+            label15.text = "Emergency:"
+            
+            label1.text = data_Benefiiary_Send[0]
+            label3.text = data_Benefiiary_Send[1]
+            label5.text = data_Benefiiary_Send[2]
+            label7.text = data_Benefiiary_Send[3]
+            label9.text = data_Benefiiary_Send[4]
+            label11.text = data_Benefiiary_Send[5]
+            label14.text = data_Benefiiary_Send[6]
+            label16.text = data_Benefiiary_Send[7]
+            
+            if  data_Benefiiary_Send[0] == "" && data_Benefiiary_Send[2] == "" && data_Benefiiary_Send[3] == "" &&
+            data_Benefiiary_Send[4] == "" && data_Benefiiary_Send[5] == "" && data_Benefiiary_Send[6] == "" &&
+            data_Benefiiary_Send[7] == "" {
+                
+                self.msgConfirmation(title: "Message", text: "Go to Edit to update your profile")
+            }
+            
+            print("\(data_Benefiiary_Send)")
+            
+            
+        default:
+            print("Error! Check the code")
+        }
+     
     }
 
     override func didReceiveMemoryWarning() {
@@ -67,9 +100,18 @@ class MyProfileVC: UIViewController, Send_Data_Myprofile {
         // Dispose of any resources that can be recreated.
     }
     
-    func textData(data: String) {
-       label1.text = data
-        
+    func textData(data: [String]) {
+       label1.text = data[0]
+       label3.text = data[1]
+       label5.text = data[2]
+       label7.text = data[3]
+       label9.text = data[4]
+       label11.text = data[5]
+       label14.text = data[6]
+       label16.text = data[7]
+   
+        data_Benefiiary_Send = data
+        print("\(data_Benefiiary_Send)")
     }
     
     
@@ -89,5 +131,17 @@ class MyProfileVC: UIViewController, Send_Data_Myprofile {
         
     }
  
-
+    func msgConfirmation (title:String, text:String) {
+        
+        let confirmation = UIAlertController.init(title: title, message: text, preferredStyle: .alert)
+        let confirmationAction = UIAlertAction.init(title: "OK", style: .default) { (action) in
+            confirmation.dismiss(animated: true, completion: nil)
+            //  self.navigationController?.popViewController(animated: true)
+        }
+        confirmation.addAction(confirmationAction)
+        present(confirmation, animated: true, completion: nil)
+    }
+    
+    
+    
 }
