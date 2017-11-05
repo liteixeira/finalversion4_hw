@@ -28,7 +28,7 @@ class LoginVC : UIViewController, UITextFieldDelegate {
        let email_Data_Stored = UserDefaults.standard.stringArray(forKey: "userEmail")!
        let password_Data_Stored = UserDefaults.standard.stringArray(forKey: "userPassword")!
        let account_type_Data_Stored = UserDefaults.standard.stringArray(forKey: "accountype")!
-      
+   
        
         for (index,item) in email_Data_Stored.enumerated() {
             if (useremailLogIn == email_Data_Stored[index]) {
@@ -40,9 +40,9 @@ class LoginVC : UIViewController, UITextFieldDelegate {
             } // end if
         } // end email_Data_Stored for loop
         
-     //   print("\(password_Data_Stored)")
+        print("\(password_Data_Stored)")
         
-     //   print("\(account_type_Data_Stored)")
+        print("\(account_type_Data_Stored)")
         
         if (temp == true) && (userpasswordLogIn == password_Data_Stored[count]){
           print("Log in can be done")

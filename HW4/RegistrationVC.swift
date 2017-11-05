@@ -14,8 +14,6 @@ var userPassword:String = ""
 var userRepeatPassword:String = ""
 var track:String = ""
 var user_Login = [LoginData]()
-// var mutable_Login:NSMutableArray = [LoginData(email: userEmail, password: userPassword, usertype: track)]
-//var mutable_Login = NSMutableArray()
 var store_Email = [String]()
 var store_Password = [String]()
 var store_Track = [String]()
@@ -115,32 +113,35 @@ class RegistrationVC: UIViewController {
             user_Login.append(LoginData(email: userEmail, password: userPassword, usertype: track ))
             
            for item in user_Login {
-            if (store_Email.contains(item.email) == false) && (store_Password.contains(item.password) == false) && (store_Track.contains(item.usertype) == false){
+            
+       
+           if (store_Email.contains(item.email) == false) && (store_Password.contains(item.password) == false) && (store_Track.contains(item.usertype) == false){
+            
                 store_Email.append(item.email)
                 store_Password.append(item.password)
                 store_Track.append(item.usertype)
-            }
-           // print("\(item.email)")
-          //  print("\(item.password)")
-         //   print("\(item.usertype)")
-            }
             
-            
+               print("\(store_Email)")
+               print("\(store_Password)")
+               print("\(store_Track)")
+                
+                
+            }
+        
+            }
             
         } // end of else
         
        //////////////////////////////////////////////////////////////////////////////////////////////////////////
+        
+        
+        /////////////////////////// Store Data //////////////////////////////////////////////////////////////////
         UserDefaults.standard.set(store_Email, forKey: "userEmail")
         UserDefaults.standard.set(store_Password, forKey: "userPassword")
         UserDefaults.standard.set(store_Track, forKey: "accountype")
         UserDefaults.standard.synchronize()
-        
-        // UserDefaults.standard.object(forKey: "userLogin")
-        // Store data
-     //   UserDefaults.standard.set(mutable_Login,forKey:"login")
-       // UserDefaults.standard.synchronize()
-       // let emailStored = UserDefaults.standard.string(forKey: userEmail)
-      //  print(emailStored!)
+        /////////////////////////////////////////////////////////////////////////////////////////////////////////
+       
         
         
     } // end of registerButton
