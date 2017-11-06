@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB5071D31FB0B62700F27160 /* OrgRegistVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5071D21FB0B62700F27160 /* OrgRegistVC.swift */; };
 		FB5834ED1F9EDF0200457AB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5834EC1F9EDF0200457AB9 /* AppDelegate.swift */; };
 		FB5834EF1F9EDF0200457AB9 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5834EE1F9EDF0200457AB9 /* LoginVC.swift */; };
 		FB5834F21F9EDF0300457AB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB5834F01F9EDF0300457AB9 /* Main.storyboard */; settings = {ASSET_TAGS = (opa, ); }; };
 		FB5834F41F9EDF0300457AB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB5834F31F9EDF0300457AB9 /* Assets.xcassets */; };
 		FB5834F71F9EDF0300457AB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB5834F51F9EDF0300457AB9 /* LaunchScreen.storyboard */; };
+		FB6BDFBF1FB0CC830067C37F /* tableServiceTVCTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6BDFBE1FB0CC830067C37F /* tableServiceTVCTableViewController.swift */; };
 		FBA8B0521FAFBCB30096F56A /* userbeneficiaryprofile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA8B0511FAFBCB30096F56A /* userbeneficiaryprofile.swift */; };
+		FBB9F20A1FB0A0B00010CEBC /* addServiceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB9F2091FB0A0B00010CEBC /* addServiceVC.swift */; };
 		FBD6EDBD1FA034150027B5C7 /* BeneficiaryRegistrationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD6EDBC1FA034150027B5C7 /* BeneficiaryRegistrationVC.swift */; };
 		FBD6EDBF1FA04FB40027B5C7 /* RegistrationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD6EDBE1FA04FB40027B5C7 /* RegistrationVC.swift */; };
 		FBD6EDC11FA800400027B5C7 /* logindata.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD6EDC01FA8003E0027B5C7 /* logindata.swift */; };
@@ -20,10 +23,10 @@
 		FBF91C881FABAC8500905E64 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF91C871FABAC8500905E64 /* HomeVC.swift */; };
 		FBF91C8A1FAC4ED100905E64 /* MyProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF91C891FAC4ED100905E64 /* MyProfileVC.swift */; };
 		FBF91C8C1FAC4F1B00905E64 /* HelperRegistrationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF91C8B1FAC4F1B00905E64 /* HelperRegistrationVC.swift */; };
-		FBF91C8E1FAD021500905E64 /* OrganizationRegistrationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF91C8D1FAD021500905E64 /* OrganizationRegistrationVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FB5071D21FB0B62700F27160 /* OrgRegistVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrgRegistVC.swift; sourceTree = "<group>"; };
 		FB5834E91F9EDF0200457AB9 /* HW4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HW4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB5834EC1F9EDF0200457AB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB5834EE1F9EDF0200457AB9 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
@@ -31,7 +34,9 @@
 		FB5834F31F9EDF0300457AB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB5834F61F9EDF0300457AB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB5834F81F9EDF0300457AB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB6BDFBE1FB0CC830067C37F /* tableServiceTVCTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tableServiceTVCTableViewController.swift; sourceTree = "<group>"; };
 		FBA8B0511FAFBCB30096F56A /* userbeneficiaryprofile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userbeneficiaryprofile.swift; sourceTree = "<group>"; };
+		FBB9F2091FB0A0B00010CEBC /* addServiceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addServiceVC.swift; sourceTree = "<group>"; };
 		FBD6EDBC1FA034150027B5C7 /* BeneficiaryRegistrationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeneficiaryRegistrationVC.swift; sourceTree = "<group>"; };
 		FBD6EDBE1FA04FB40027B5C7 /* RegistrationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationVC.swift; sourceTree = "<group>"; };
 		FBD6EDC01FA8003E0027B5C7 /* logindata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = logindata.swift; sourceTree = "<group>"; };
@@ -39,7 +44,6 @@
 		FBF91C871FABAC8500905E64 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		FBF91C891FAC4ED100905E64 /* MyProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileVC.swift; sourceTree = "<group>"; };
 		FBF91C8B1FAC4F1B00905E64 /* HelperRegistrationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperRegistrationVC.swift; sourceTree = "<group>"; };
-		FBF91C8D1FAD021500905E64 /* OrganizationRegistrationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizationRegistrationVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,11 +81,13 @@
 				FBF91C871FABAC8500905E64 /* HomeVC.swift */,
 				FBD6EDBC1FA034150027B5C7 /* BeneficiaryRegistrationVC.swift */,
 				FB5834F01F9EDF0300457AB9 /* Main.storyboard */,
+				FB5071D21FB0B62700F27160 /* OrgRegistVC.swift */,
+				FB6BDFBE1FB0CC830067C37F /* tableServiceTVCTableViewController.swift */,
+				FBB9F2091FB0A0B00010CEBC /* addServiceVC.swift */,
 				FBF91C8B1FAC4F1B00905E64 /* HelperRegistrationVC.swift */,
 				FBF91C891FAC4ED100905E64 /* MyProfileVC.swift */,
 				FBEB382C1FB003E300F05661 /* tempdata.swift */,
 				FBA8B0511FAFBCB30096F56A /* userbeneficiaryprofile.swift */,
-				FBF91C8D1FAD021500905E64 /* OrganizationRegistrationVC.swift */,
 				FBD6EDC01FA8003E0027B5C7 /* logindata.swift */,
 				FBD6EDBE1FA04FB40027B5C7 /* RegistrationVC.swift */,
 				FB5834F31F9EDF0300457AB9 /* Assets.xcassets */,
@@ -167,14 +173,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB5834EF1F9EDF0200457AB9 /* LoginVC.swift in Sources */,
+				FBB9F20A1FB0A0B00010CEBC /* addServiceVC.swift in Sources */,
 				FBF91C8C1FAC4F1B00905E64 /* HelperRegistrationVC.swift in Sources */,
 				FB5834ED1F9EDF0200457AB9 /* AppDelegate.swift in Sources */,
 				FBD6EDC11FA800400027B5C7 /* logindata.swift in Sources */,
 				FBF91C8A1FAC4ED100905E64 /* MyProfileVC.swift in Sources */,
 				FBEB382D1FB003E300F05661 /* tempdata.swift in Sources */,
 				FBF91C881FABAC8500905E64 /* HomeVC.swift in Sources */,
+				FB6BDFBF1FB0CC830067C37F /* tableServiceTVCTableViewController.swift in Sources */,
 				FBD6EDBD1FA034150027B5C7 /* BeneficiaryRegistrationVC.swift in Sources */,
-				FBF91C8E1FAD021500905E64 /* OrganizationRegistrationVC.swift in Sources */,
+				FB5071D31FB0B62700F27160 /* OrgRegistVC.swift in Sources */,
 				FBA8B0521FAFBCB30096F56A /* userbeneficiaryprofile.swift in Sources */,
 				FBD6EDBF1FA04FB40027B5C7 /* RegistrationVC.swift in Sources */,
 			);

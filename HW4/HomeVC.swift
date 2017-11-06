@@ -64,6 +64,19 @@ class HomeVC: UIViewController {
         
         
     }
+    
+    @IBAction func button2_Pressed(_ sender: UIButton) {
+        switch current_User_Account {
+        case "Beneficiary":
+            self.performSegue(withIdentifier: "hometoprofile", sender: self )
+        case "Organization":
+            self.performSegue(withIdentifier: "hometoorgrg", sender: self)
+        default:
+            print("Error")
+        }
+        
+    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -92,6 +105,7 @@ class HomeVC: UIViewController {
             print("Opa!")
             print("\(destVC.current_User_Account)")
             print("\(destVC.current_User_Email)")
+            
             
         }
        

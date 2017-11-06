@@ -46,10 +46,11 @@ class MyProfileVC: UIViewController, Send_Data_Myprofile {
         switch current_User_Account {
         case "Beneficiary":
              self.performSegue(withIdentifier: "myprofiletobeneficiary", sender: self)
-        case "Helper":
+      /*  case "Helper":
               self.performSegue(withIdentifier: "myprofiletohelper", sender: self)
         case "Organization":
-              self.performSegue(withIdentifier: "myprofiletoorganization", sender: self)
+              print("Test")
+             // self.performSegue(withIdentifier: "myprofiletoorganization", sender: self)*/
         default:
             print("Error! Check the code!")
         }
@@ -115,7 +116,6 @@ class MyProfileVC: UIViewController, Send_Data_Myprofile {
                 
                
            // }
-           
             
             
         default:

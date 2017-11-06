@@ -1,14 +1,14 @@
 //
-//  OrganizationRegistrationVC.swift
+//  OrgRegistVC.swift
 //  HW4
 //
-//  Created by Sumeet Dhakan on 11/3/17.
+//  Created by Sumeet Dhakan on 11/6/17.
 //  Copyright © 2017 livia. All rights reserved.
 //
 
 import UIKit
 
-class OrganizationRegistrationVC: UIViewController {
+class OrgRegistVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
