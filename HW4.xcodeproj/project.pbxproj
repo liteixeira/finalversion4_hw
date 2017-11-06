@@ -12,9 +12,11 @@
 		FB5834F21F9EDF0300457AB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB5834F01F9EDF0300457AB9 /* Main.storyboard */; settings = {ASSET_TAGS = (opa, ); }; };
 		FB5834F41F9EDF0300457AB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB5834F31F9EDF0300457AB9 /* Assets.xcassets */; };
 		FB5834F71F9EDF0300457AB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB5834F51F9EDF0300457AB9 /* LaunchScreen.storyboard */; };
+		FBA8B0521FAFBCB30096F56A /* userbeneficiaryprofile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA8B0511FAFBCB30096F56A /* userbeneficiaryprofile.swift */; };
 		FBD6EDBD1FA034150027B5C7 /* BeneficiaryRegistrationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD6EDBC1FA034150027B5C7 /* BeneficiaryRegistrationVC.swift */; };
 		FBD6EDBF1FA04FB40027B5C7 /* RegistrationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD6EDBE1FA04FB40027B5C7 /* RegistrationVC.swift */; };
 		FBD6EDC11FA800400027B5C7 /* logindata.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD6EDC01FA8003E0027B5C7 /* logindata.swift */; };
+		FBEB382D1FB003E300F05661 /* tempdata.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEB382C1FB003E300F05661 /* tempdata.swift */; };
 		FBF91C881FABAC8500905E64 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF91C871FABAC8500905E64 /* HomeVC.swift */; };
 		FBF91C8A1FAC4ED100905E64 /* MyProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF91C891FAC4ED100905E64 /* MyProfileVC.swift */; };
 		FBF91C8C1FAC4F1B00905E64 /* HelperRegistrationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF91C8B1FAC4F1B00905E64 /* HelperRegistrationVC.swift */; };
@@ -29,9 +31,11 @@
 		FB5834F31F9EDF0300457AB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB5834F61F9EDF0300457AB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB5834F81F9EDF0300457AB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBA8B0511FAFBCB30096F56A /* userbeneficiaryprofile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userbeneficiaryprofile.swift; sourceTree = "<group>"; };
 		FBD6EDBC1FA034150027B5C7 /* BeneficiaryRegistrationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeneficiaryRegistrationVC.swift; sourceTree = "<group>"; };
 		FBD6EDBE1FA04FB40027B5C7 /* RegistrationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationVC.swift; sourceTree = "<group>"; };
 		FBD6EDC01FA8003E0027B5C7 /* logindata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = logindata.swift; sourceTree = "<group>"; };
+		FBEB382C1FB003E300F05661 /* tempdata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tempdata.swift; sourceTree = "<group>"; };
 		FBF91C871FABAC8500905E64 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		FBF91C891FAC4ED100905E64 /* MyProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileVC.swift; sourceTree = "<group>"; };
 		FBF91C8B1FAC4F1B00905E64 /* HelperRegistrationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperRegistrationVC.swift; sourceTree = "<group>"; };
@@ -75,6 +79,8 @@
 				FB5834F01F9EDF0300457AB9 /* Main.storyboard */,
 				FBF91C8B1FAC4F1B00905E64 /* HelperRegistrationVC.swift */,
 				FBF91C891FAC4ED100905E64 /* MyProfileVC.swift */,
+				FBEB382C1FB003E300F05661 /* tempdata.swift */,
+				FBA8B0511FAFBCB30096F56A /* userbeneficiaryprofile.swift */,
 				FBF91C8D1FAD021500905E64 /* OrganizationRegistrationVC.swift */,
 				FBD6EDC01FA8003E0027B5C7 /* logindata.swift */,
 				FBD6EDBE1FA04FB40027B5C7 /* RegistrationVC.swift */,
@@ -165,9 +171,11 @@
 				FB5834ED1F9EDF0200457AB9 /* AppDelegate.swift in Sources */,
 				FBD6EDC11FA800400027B5C7 /* logindata.swift in Sources */,
 				FBF91C8A1FAC4ED100905E64 /* MyProfileVC.swift in Sources */,
+				FBEB382D1FB003E300F05661 /* tempdata.swift in Sources */,
 				FBF91C881FABAC8500905E64 /* HomeVC.swift in Sources */,
 				FBD6EDBD1FA034150027B5C7 /* BeneficiaryRegistrationVC.swift in Sources */,
 				FBF91C8E1FAD021500905E64 /* OrganizationRegistrationVC.swift in Sources */,
+				FBA8B0521FAFBCB30096F56A /* userbeneficiaryprofile.swift in Sources */,
 				FBD6EDBF1FA04FB40027B5C7 /* RegistrationVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

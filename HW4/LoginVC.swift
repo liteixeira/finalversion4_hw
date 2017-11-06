@@ -92,7 +92,7 @@ class LoginVC : UIViewController, UITextFieldDelegate {
 
             destVC.current_User_Account = receive_account_type_Data_Stored
             destVC.current_User_Email = receive_email_Data_Stored
-            
+            destVC.index_user = String(count)
             
       //  navVC.childViewControllers
 

@@ -16,6 +16,8 @@ class HomeVC: UIViewController {
     var current_User_Account:String = ""
     var current_User_Name:String = ""
     var current_User_Email:String = ""
+    var index_user = ""
+    
     
     @IBOutlet weak var button1: UIButton!
     @IBOutlet weak var button2: UIButton!
@@ -86,6 +88,7 @@ class HomeVC: UIViewController {
             
             destVC.current_User_Account = temp_current_User
             destVC.current_User_Email = temp_current_Email
+            destVC.current_User_index = index_user
             print("Opa!")
             print("\(destVC.current_User_Account)")
             print("\(destVC.current_User_Email)")
